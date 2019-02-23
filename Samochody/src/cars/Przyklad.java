@@ -4,10 +4,11 @@ public class Przyklad {
 	
 	public static void main(String[] args)
 	{
-		Car car = new Car("BMW", false, 10000, 20000);
+		Car car = new Car("BMW", 10000, 20000);
 		
+		car.ChangePrice(-230.5);
 		
-		
+		System.out.print(car.ShowPrice());
 		
 	}
 	

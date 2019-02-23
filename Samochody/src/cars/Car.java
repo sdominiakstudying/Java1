@@ -7,13 +7,26 @@ public class Car {
 	private int mileage;
 	private double price;
 	
+	// If the car is used
 	
-	public Car (String brand, boolean used, int mileage, double price)
+	public Car (String brand, int mileage, double price)
 	{
 		
 		this.brand = brand;
-		this.used = used;
+		this.used = true;
 		this.mileage = mileage;
+		this.price = price;
+		
+	}
+	
+	// If the car is new
+	
+	public Car (String brand, double price)
+	{
+		
+		this.brand = brand;
+		this.used = false;
+		this.mileage = 0;
 		this.price = price;
 		
 	}
@@ -38,7 +51,7 @@ public class Car {
 	
 	// Price change, they're not paid to be given out
 	
-	public void PriceChange (double priceChange)
+	public void ChangePrice (double priceChange)
 	{
 		if (price + priceChange > 0)
 		{
