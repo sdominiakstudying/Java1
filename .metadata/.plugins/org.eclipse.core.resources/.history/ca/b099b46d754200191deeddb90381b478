@@ -1,0 +1,7 @@
+package Baskets;
+
+public interface IPromotion {
+	
+	boolean CanCalculate (Product product);
+	
+}

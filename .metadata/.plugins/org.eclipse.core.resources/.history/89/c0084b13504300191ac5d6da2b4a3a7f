@@ -1,0 +1,15 @@
+package moneylending;
+
+import java.util.Date;
+
+public class MainApplying {
+
+	public static void main(String[] args) {
+		
+		
+		private LoanApplication newClient = new LoanApplication();
+		
+		
+	}
+
+}

@@ -1,0 +1,18 @@
+package Invoices;
+
+public class Invoice {
+	
+	private static int totalInvoices = 0;
+	private int invoiceNumber;
+	
+	final String COMPANYNAME = "bla bla bla";
+
+	public Invoice() {
+		this.totalInvoices++;
+		this.invoiceNumber = totalInvoices;;
+	}
+	
+	
+	
+	
+}

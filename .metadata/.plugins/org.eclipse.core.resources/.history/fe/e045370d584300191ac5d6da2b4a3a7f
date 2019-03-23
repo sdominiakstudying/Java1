@@ -1,0 +1,9 @@
+package Invoices;
+
+public class Item {
+	private String productName;
+	private int quantity;
+	private int singleItemPrice;
+	private int VatTAX;
+	
+}

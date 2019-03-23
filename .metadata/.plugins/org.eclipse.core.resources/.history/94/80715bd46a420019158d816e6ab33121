@@ -1,0 +1,17 @@
+package Baskets;
+package Collections;
+
+
+public class Product {
+	
+	public String code;
+	
+	public String name;
+	
+	public double price;
+	
+	public double discountPrice;
+	
+	
+	
+}

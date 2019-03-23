@@ -1,0 +1,10 @@
+package Invoices;
+
+public class Invoice {
+	
+	private static int totalInvoices = 0;
+	private int invoiceNumber;
+	
+	private string companyName;
+	
+}

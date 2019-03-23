@@ -1,0 +1,26 @@
+package Baskets;
+
+import java.util.ArrayList;
+
+public class Product {
+	
+	String code;
+	
+	String name;
+	
+	double price;
+	
+	double discountPrice;
+
+	public Product(String code, String name, double price, double discountPrice) {
+		this.code = code;
+		this.name = name;
+		this.price = price;
+		this.discountPrice = discountPrice;
+	}
+	
+	
+	
+	
+	
+}

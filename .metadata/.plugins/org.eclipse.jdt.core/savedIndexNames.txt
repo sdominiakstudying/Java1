@@ -1,0 +1,7 @@
+INDEX VERSION 1.126+/home/PJWSTK/s18864/Pulpit/projektJava/Java1/.metadata/.plugins/org.eclipse.jdt.core
+1123333878.index
+1345878752.index
+1380074560.index
+3444718319.index
+4039371887.index
+2133968419.index

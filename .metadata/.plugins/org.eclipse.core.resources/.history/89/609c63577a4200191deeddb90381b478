@@ -1,0 +1,84 @@
+package Baskets;
+
+import java.util.ArrayList;
+
+public class Cart {
+	
+	// Create a list of products
+	private ArrayList <Product> products = new ArrayList<>();
+	
+	
+	// Add a product to the list
+	public void AddProduct(Product product)
+	{
+		products.add(product);
+		SortProducts();
+	}
+	
+	
+	// Remove a product from the list
+	public void RemoveProduct (Product product)
+	{
+		products.remove(product);
+	}
+	
+	// Sorting implementation
+	private void SortProducts()
+	{
+		
+		// Create a max heap
+		CreateProductMaxHeap (products.size());
+		
+		// Sort them from largest to smallest
+		
+		
+		
+	}
+	
+	private void CreateProductMaxHeap (int size)
+	{
+		for (int i = products.size()/2; i>=0; i--)
+		{
+			if (Compare (products.get(i),products.get(2*i)))
+			{
+				Product key = products.get(i);
+				products.set(i, products.get(2*i));
+				products.set(2*i, key);
+			}
+			if (Compare (products.get(i),products.get(2*i+1)))
+			{
+				Product key = products.get(i);
+				products.set(i, products.get(2*i+1));
+				products.set(2*i+1, key);
+			}
+			
+		}
+	}
+	
+	// returns true if the second value is larger or if the string
+	private boolean Compare (Product product1, Product product2)
+	{
+		if (product2.getPrice() > product1.getPrice())
+		{
+			return true;
+		}
+		else if (product2.getPrice() == product1.getPrice() &&
+				CompareStringsAlphabetically(product1.getName(), product2.getName()))
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	
+	}
+	
+	// Returns "true" if the second string is further than the first
+	private boolean CompareStringsAlphabetically (String string1, String string2)
+	{
+		
+		
+		return true;
+	}
+}

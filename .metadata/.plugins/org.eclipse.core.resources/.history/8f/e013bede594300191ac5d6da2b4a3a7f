@@ -1,0 +1,23 @@
+package Invoices;
+
+public class Item {
+	private String productName;
+	private int quantity;
+	private int priceNetto;
+	private int vatTax;
+	
+	private Invoice parentInvoice;
+
+	public Item(Invoice parentInvoice, String productName, int quantity, int priceNetto,
+			int vatTax) {
+		this.parentInvoice = parentInvoice;
+		this.productName = productName;
+		this.quantity = quantity;
+		this.priceNetto = priceNetto;
+		this.vatTax = vatTax;
+	}
+	
+	
+	
+	
+}

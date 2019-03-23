@@ -1,0 +1,8 @@
+package Baskets;
+
+public interface IPromotion {
+	
+	boolean CanCalculate (Product product);
+	puvlic void CalculateOffer(Product product);
+	
+}

@@ -1,0 +1,14 @@
+package Invoices;
+
+public class Item {
+	private String productName;
+	private int quantity;
+	private int priceNetto;
+	private int vatTax;
+	
+	Invoice parentInvoice;
+	
+	
+	
+	
+}

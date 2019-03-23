@@ -1,0 +1,193 @@
+package moneylending;
+
+import java.util.Date;
+import java.util.regex.*;
+
+public class LoanApplication {
+	
+	private String firstName;
+	private String lastName;
+	private String pesel;
+	private String nip;
+	private String bankAccountNumber;
+	private Date dateOfBirth;
+	private sex gender;
+	
+	
+
+
+	public LoanApplication (String firstName, String lastName, String pesel, String nip,
+							String bankAccountNumber, Date dateOfBirth, sex gender)
+	{
+		setFirstName(firstName);
+		setLastName(lastName);
+		setNip(nip);
+		setBankAccountNumber(bankAccountNumber);
+		setDateOfBirth(dateOfBirth);
+		setGender(gender);
+		setPesel(pesel);
+		
+		
+	}
+
+
+	
+	
+	private void setFirstName(String firstName) {
+		if (ValidateName (firstName))
+		{
+			this.firstName = firstName;
+		}
+		else
+		{
+			// creates a bug report
+		}
+	}
+	
+	private boolean ValidateName(String name)
+	{
+		if (name == null)
+		{
+			return false;
+		}
+		else if (name.length() <= 2)
+		{
+			return false;
+		}
+		else if ()
+		{
+			
+		}
+		else
+		{
+			return true;
+		}
+	}
+
+
+
+	private void setLastName(String lastName) {
+		if (ValidateLastName(lastName))
+		{
+			this.lastName = lastName;
+		}
+		else
+		{
+			// show an error message
+		}
+	}
+	
+	private boolean ValidateLastName(String lastName)
+	{
+		
+		return true;
+	}
+
+
+
+	private void setPesel(String pesel) {
+		this.pesel = pesel;
+	}
+
+
+
+
+	private void setNip(String nip) {
+		if (ValidateNIP (nip))
+		this.nip = nip;
+	}
+	
+	private boolean ValidateNIP (String nip)
+	{
+		return true;
+	}
+
+
+
+	private void setBankAccountNumber(String bankAccountNumber) {
+		if (ValidateBankAccountNumber (bankAccountNumber))
+		{
+			this.bankAccountNumber = bankAccountNumber;
+		}
+		else
+		{
+			// show an error message
+		}
+		
+	}
+	
+	private boolean ValidateBankAccountNumber (String bankAccountNumber)
+	{
+
+		return true;
+	}
+
+
+
+	private void setDateOfBirth(Date dateOfBirth) {
+		this.dateOfBirth = dateOfBirth;
+	}
+
+
+
+
+	private void setGender(sex gender) {
+		this.gender = gender;
+	}
+
+
+
+
+	public String getFirstName() {
+		return firstName;
+	}
+
+
+	public String getLastName() {
+		return lastName;
+	}
+
+
+	public String getPesel() {
+		return pesel;
+	}
+
+
+	public String getNip() {
+		return nip;
+	}
+
+
+	public String getBankAccountNumber() {
+		return bankAccountNumber;
+	}
+
+
+	public Date getDateOfBirth() {
+		return dateOfBirth;
+	}
+
+
+	public sex getGender() {
+		return gender;
+	}
+	
+	
+	/*
+	 * See more on regular expressions on:
+	 * http://tutorials.jenkov.com/java-regex/index.html
+	 */
+	static private boolean validatePattern(String valData, String patternString) {
+
+		Pattern pattern = Pattern.compile(patternString);
+		Matcher matcher = pattern.matcher(valData);
+		if(!matcher.matches())
+			return false;
+		else
+			return true;
+}
+	
+	
+		
+	
+}

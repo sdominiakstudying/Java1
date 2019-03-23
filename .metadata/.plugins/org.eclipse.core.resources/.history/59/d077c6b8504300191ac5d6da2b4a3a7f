@@ -1,0 +1,16 @@
+package moneylending;
+
+import java.util.Date;
+
+public class MainApplying {
+
+	public static void main(String[] args) {
+		
+		
+		private LoanApplication newClient = new LoanApplication("Andrzej", "Grabowski",
+				"186482", "181684", "8687332", Calendar.set(12, 10, 1983), sex.M);
+		
+		
+	}
+
+}

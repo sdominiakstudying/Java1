@@ -1,0 +1,68 @@
+package moneylending;
+
+import java.util.Date;
+
+public class LoanApplication {
+	
+	private String firstName;
+	private String lastName;
+	private String pesel;
+	private String nip;
+	private String bankAccountNumber;
+	private Date dateOfBirth;
+	private sex gender;
+	
+	
+	public LoanApplication ()
+	{
+		
+	}
+	
+	
+	
+	
+	public String getFirstName() {
+		return firstName;
+	}
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+	public String getLastName() {
+		return lastName;
+	}
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+	public String getPesel() {
+		return pesel;
+	}
+	public void setPesel(String pesel) {
+		this.pesel = pesel;
+	}
+	public String getNip() {
+		return nip;
+	}
+	public void setNip(String nip) {
+		this.nip = nip;
+	}
+	public String getBankAccountNumber() {
+		return bankAccountNumber;
+	}
+	public void setBankAccountNumber(String bankAccountNumber) {
+		this.bankAccountNumber = bankAccountNumber;
+	}
+	public Date getDateOfBirth() {
+		return dateOfBirth;
+	}
+	public void setDateOfBirth(Date dateOfBirth) {
+		this.dateOfBirth = dateOfBirth;
+	}
+	public sex getGender() {
+		return gender;
+	}
+	public void setGender(sex gender) {
+		this.gender = gender;
+	}
+		
+	
+}

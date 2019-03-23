@@ -1,0 +1,10 @@
+package Invoices;
+
+public class Invoice {
+	
+	private static totalInvoices;
+	
+	private invoiceNumber;
+	
+	
+}

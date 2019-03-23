@@ -1,0 +1,5 @@
+package Baskets;
+
+public interface IPromotion {
+
+}

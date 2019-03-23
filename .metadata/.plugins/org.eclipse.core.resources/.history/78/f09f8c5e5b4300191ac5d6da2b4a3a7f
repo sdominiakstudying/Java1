@@ -1,0 +1,20 @@
+package Invoices;
+
+import java.util.ArrayList;
+
+public class Invoice {
+	
+	private static int totalInvoices = 0;
+	final private int INVOICENUMBER;
+	
+	final private String COMPANYNAME;
+
+	public Invoice(String imprint) {
+		this.INVOICENUMBER = this.totalInvoices++;
+		COMPANYNAME = imprint;
+	}
+	
+	
+	
+	
+}

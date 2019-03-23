@@ -1,0 +1,10 @@
+package Invoices;
+
+public class Item {
+	private String productName;
+	private int quantity;
+	private int singleItemPriceNetto;
+	private int completePriceNetto;
+	private int vatTax;
+	
+}

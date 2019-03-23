@@ -1,0 +1,5 @@
+package moneylending;
+
+public enum sex {
+
+}

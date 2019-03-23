@@ -1,0 +1,18 @@
+package Baskets;
+
+public class ValuePromotion implements IPromotion {
+
+	@Override
+	public boolean CanCalculate(Cart cart) {
+		double koszykBrutto = Cart.TotalPriceOfProducts();
+		
+		return false;
+	}
+
+	@Override
+	public void CalculateOffer(Cart cart) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
