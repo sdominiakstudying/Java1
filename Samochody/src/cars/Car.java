@@ -45,7 +45,8 @@ public class Car {
 	{
 		if (mileageChange > 0)
 		{
-			mileage += mileageChange;
+			this.mileage += mileageChange;
+			this.used = true;
 		}
 	}
 	
@@ -62,22 +63,22 @@ public class Car {
 	
 	
 	
-	public String ShowBrand()
+	public String GetBrand()
 	{
 		return brand;
 	}
 	
-	public boolean ShowIfUsed()
+	public boolean GetIfUsed()
 	{
 		return used;
 	}
 	
-	public int ShowMileage()
+	public int GetMileage()
 	{
 		return mileage;
 	}
 	
-	public double ShowPrice()
+	public double GetPrice()
 	{
 		return price;
 	}

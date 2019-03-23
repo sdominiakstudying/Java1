@@ -8,7 +8,6 @@ public class Przyklad {
 		{
 			System.out.print ("Ala ma kota.\n");
 		}
-		
 	}
 	
 	
